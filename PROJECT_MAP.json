@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-30T14:47:11.360Z",
+  "project": "interview-questions",
+  "root": ".",
+  "method": "static-local-index",
+  "limitations": [
+    "Нет динамических вызовов и сетевых интеграций",
+    "Сверять sha256 и evidence.line с текущими исходниками",
+    "Наличие зависимости не доказывает работоспособность"
+  ],
+  "nodes": [
+    {
+      "id": "project:interview-questions",
+      "type": "project",
+      "name": "interview-questions"
+    },
+    {
+      "id": "project:interview-questions/file:event-loop.md",
+      "type": "file",
+      "path": "event-loop.md"
+    },
+    {
+      "id": "project:interview-questions/file:event-loop_yt.md",
+      "type": "file",
+      "path": "event-loop_yt.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "project:interview-questions",
+      "target": "project:interview-questions/file:event-loop.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "event-loop.md"
+      },
+      "method": "filesystem"
+    },
+    {
+      "source": "project:interview-questions",
+      "target": "project:interview-questions/file:event-loop_yt.md",
+      "relation": "contains",
+      "evidence": {
+        "path": "event-loop_yt.md"
+      },
+      "method": "filesystem"
+    }
+  ]
+}
